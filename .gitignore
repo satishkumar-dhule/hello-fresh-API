@@ -1,0 +1,8 @@
+*.pyc
+build
+prof/
+.idea/
+MANIFEST
+*__pycache__/
+.pytest*/
+*venv*
