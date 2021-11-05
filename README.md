@@ -26,25 +26,25 @@ Logging
 Unit testing
 
 ### How to Run
-Execute setup.sh which will set up all docker stack and bring up the environment.
+- Execute setup.sh which will set up all docker stack and bring up the environment.
 
-![Screenshot](docs/setup.png)
+    ![Screenshot](docs/setup.png)
 
-After successful setup you should see web and db tier running in Docker
+- After successful setup you should see web and db tier running in Docker.
 
-![Screenshot](docs/docker-stack.png)
+    ![Screenshot](docs/docker-stack.png)
 
-To bring up the system you can use below command
+- To bring up the system you can use below command.
 
-![Screenshot](docs/bringup.png)
+    ![Screenshot](docs/bringup.png)
 
-To bring up the system in dettached mode you can use below command
+- To bring up the system in dettached mode you can use below command.
 
-![Screenshot](docs/bringup-dettached.png)
+    ![Screenshot](docs/bringup-dettached.png)
 
-To bring down the system you can use below command
+- To bring down the system you can use below command.
 
-![Screenshot](docs/bringdown.png)
+    ![Screenshot](docs/bringdown.png)
 
 
 ### API Testing
