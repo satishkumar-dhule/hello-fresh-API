@@ -1,7 +1,6 @@
 import datetime
 import json
-from application import *
-import application
+from application.app import *
 from application.models import Users,db
 import pytest
 import jwt
@@ -10,7 +9,7 @@ import os
 
 @pytest.fixture
 def client():
-    app = application.app.create_app("Development")
+    app = create_app("Development")
 
     with app.test_client() as client:
         # with app.app_context():
@@ -24,7 +23,7 @@ def getLoginToken():
     """Login helper function"""
     user = Users.get(Users.name == 'user')
     token = jwt.encode(
-        {'public_id': str(user.public_id), 'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=30)},
+        {'public_id': str(user.public_id), 'exp': datetime.utcnow() + timedelta(minutes=30)},
         os.getenv('SECRET_KEY'))
     return token
 
