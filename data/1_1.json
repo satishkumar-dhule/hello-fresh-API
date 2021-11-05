@@ -1,0 +1,22 @@
+#type -->         
+
+{ "is_publish": true, "name": "Meat & Veggis" }
+
+
+#recipe -->         
+{
+    "description": "Spice up your Sunday roast with decadent duck breast and all the trimmings: from the cheesy chive mash to the hazelnut-adorned greens and a sweet and savoury caramelised onion sauce, everyone will want seconds. \n\nUnfortunately, this week's truffle oil was in short supply, so we've flavoured the mash with chives instead. Don't worry, the recipe will be just as delicious!",
+    "directions": "Preheat the oven to 240°C/220°C fan forced. Bring a medium saucepan of salted water to the boil. Peel the potato and cut into large chunks. Roughly chop the chives. Cook the potato in the boiling water until easily pierced with a knife, 12-15 minutes. Drain and return to the pan. Add the butter and milk to the potato. Season generously with salt. Mash until smooth. Stir through the grated Parmesan cheese and chives. Cover to keep warm.\nTIP: Save time and get more fibre by leaving the potato unpeeled!\n\nWhile the potato is cooking, slice the baby broccoli in half lengthways. Trim the green beans. Roughly chop the hazelnuts. Finely chop the garlic. Thinly slice the red onion.\nOn a lined oven tray, place the roast duck breast, skin-side up. Roast until lightly browned and heated through, 8-10 minutes. Remove from the oven. Heat a large frying pan over a high heat. Once hot, transfer the duck to the pan, skin-side down. Cook until the skin is golden brown, 1-2 minutes. Transfer to a plate to rest for 5 minutes.\nTIP: For even browning, press down on the duck in the frying pan using a spatula.\n\nWhile the duck is resting, wash out the frying pan and return to a medium-high heat with a drizzle of olive oil. Cook the baby broccoli, green beans and onion until softened, 4-5 minutes. Add the garlic and hazelnuts and cook until fragrant, 1-2 minutes. Season with salt and pepper. Transfer to a medium bowl and cover to keep warm.\nReturn the frying pan to a medium-high heat with a drizzle of olive oil. Add the caramelised onion chutney and the water. Season, then cook, stirring, until slightly reduced, 1 minute. Remove from the heat.\nSlice the roast duck. Divide the duck, chive-Parmesan mash and hazelnut greens between plates. Spoon the caramelised onion sauce over the duck to serve.",
+	"classification": 1,
+    "cook_time": "30",
+    "is_publish": true,
+    "num_of_servings": 2,
+    "nutrition": {"Energy (kJ)":"3512 kJ",
+	"Fat": "45.7 g",
+	"of which saturates": "15.3 g",
+	"Carbohydrate": "48.1 g",
+	"of which sugars": "17.1 g",
+	"Protein": "54 g",
+	"Sodium": "803 mg"},
+    "recipe_name": "Roast Duck & Chive-Parmesan Mash <sub>with Hazelnut Greens</sub>"
+}

@@ -1,0 +1,22 @@
+#type -->         
+
+{ "is_publish": true, "name": "Calorie-Smart" }
+
+
+#recipe -->         
+{
+    "description": "We love poke! It's so easy to customise with your favourite flavours. This veggie version is brimming with Japanese tofu for a protein hit, plus capsicum and carrot for natural sweetness and a pop of colour. Bring it all together with our creamy sesame dressing and a sprinkle of crispy shallots.",
+    "directions": "Finely chop the garlic. In a medium saucepan, melt the butter with a dash of olive oil over a medium heat. Cook the garlic until fragrant, 1-2 minutes. Add the basmati rice, water and a generous pinch of salt. Stir, then bring to the boil. Reduce the heat to low and cover with a lid. Cook for 10 minutes, then remove from the heat. Keep covered until the rice is tender and the water is absorbed, 10 minutes.\nTIP: The rice will finish cooking in its own steam, so don't peek!\nWhile the rice is cooking, thinly slice the red onion (see ingredients). In a small bowl, combine the onion, rice wine vinegar and a generous pinch of salt and sugar. Add just enough water to cover the onion. Set aside.\nCut the Japanese tofu into 2cm cubes. Thinly slice the carrot into half-moons. Cut the capsicum into bite-sized chunks.\nIn a large frying pan, heat a drizzle of olive oil over a medium-high heat. Cook the tofu, tossing, until golden, 4 minutes. Add the Southeast Asian spice blend (see ingredients) and cook until coated and fragrant, 1 minute. Transfer to a plate.\nReturn the frying pan to a medium-high heat with a drizzle of olive oil. Cook the carrot and capsicum, tossing, until tender, 3 minutes. Remove from the heat, then add the sweet chilli sauce and soy sauce. Toss to coat.\nThinly slice the long red chilli (if using). Drain the pickled onion. Divide the garlic rice between bowls. Top with the veggies and tofu. Drizzle with the sesame dressing. Garnish with the pickled onion, chilli and crispy shallots to serve.",
+	"classification": 4,
+    "cook_time": "30",
+    "is_publish": true,
+    "num_of_servings": 4,
+    "nutrition": {"Energy (kJ)":"3397 kJ",
+	"Fat": "39.9 g",
+	"of which saturates": "10.3 g",
+	"Carbohydrate": "90.1 g",
+	"of which sugars": "24.1 g",
+	"Protein": "27.3 g",
+	"Sodium": "1222 mg"},
+    "recipe_name": "Tofu & Veggie Poke Bowl <sub>with Sesame Dressing & Pickled Onion</sub>"
+}

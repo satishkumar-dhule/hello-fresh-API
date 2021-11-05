@@ -1,0 +1,22 @@
+#type -->         
+
+{ "is_publish": true, "name": "Family-Friendly" }
+
+
+#recipe -->         
+{
+    "description": "Loaded with tomatoey, Tex-Mex-spiced beef and veggies, this is no ordinary rice bake. Grill until the cheese is gooey and golden and serve with some mandatory sour cream, plus a squeeze of lime to cut the richness.",
+    "directions": "Finely chop the garlic. In a medium saucepan, melt the butter with a dash of olive oil over a medium heat. Cook the garlic until fragrant, 1-2 minutes. Add the basmati rice, the water and a generous pinch of salt. Stir, then bring to the boil. Reduce the heat to low and cover with a lid. Cook for 10 minutes, then remove from the heat. Keep covered until the rice is tender and the water is absorbed, 10 minutes.\nTIP: The rice will finish cooking in its own steam, so don't peek!\nWhile the rice is cooking, cut the capsicum into bite-sized chunks. Drain the sweetcorn. In a large frying pan, heat a drizzle of olive oil over a high heat. Cook the capsicum and corn, tossing, until lightly browned, 4-5 minutes. Transfer to a medium bowl. Grate the carrot. Finely chop the brown onion. Zest the lime, then cut into wedges.\nReturn the frying pan to a medium-high heat with a drizzle of olive oil. Cook the onion, stirring, until softened, 3-4 minutes. Add the beef mince and carrot and cook, breaking the mince up with a spoon, until cooked through, 5-6 minutes.\nAdd the Tex-Mex spice blend and cook until fragrant, 1 minute. Add the tomato paste (see ingredients), the water (for the beef) and beef-style stock powder. Simmer until thickened, 2-3 minutes.\nPreheat the grill to high. To the pan with the beef, add the rice, lime zest, capsicum and corn, gently stirring to combine. Season to taste with salt and pepper. Transfer to a baking dish and sprinkle over the shredded Cheddar cheese. Grill until lightly golden, 6-8 minutes.\nDivide the cheesy Mexican beef and rice bake between plates. Serve with the lime wedges and a dollop of light sour cream.",
+	"classification": 3,
+    "cook_time": "40",
+    "is_publish": true,
+    "num_of_servings": 4,
+    "nutrition": {"Energy (kJ)":"3969 kJ",
+	"Fat": "42.9 g",
+	"of which saturates": "21.3 g",
+	"Carbohydrate": "86.1 g",
+	"of which sugars": "22.1 g",
+	"Protein": "47.3 g",
+	"Sodium": "1331 mg"},
+    "recipe_name": "Cheesy Mexican Beef & Rice Bake <sub>with Sour Cream & Lime</sub>"
+}

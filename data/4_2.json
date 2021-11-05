@@ -1,0 +1,22 @@
+#type -->         
+
+{ "is_publish": true, "name": "Calorie-Smart" }
+
+
+#recipe -->         
+{
+    "description": "If you're looking for some Meatless Monday inspo, this is it! In our vegetarian take on the fragrant noodle soup, we've teamed a creamy coconut broth with a healthy squeeze of lemon juice to lift and balance the lovely complex flavours.\nthis recipe is under 650kcal per serving.\nUnfortunately, this week's udon noodles were in short supply, so we've replaced them with flat noodles. Don't worry, the recipe will be just as delicious!",
+    "directions": "• Boil the kettle. • Thinly slice carrot and capsicum. • Roughly chop Asian greens. • Slice lemon into wedges.\n• In a large saucepan, heat a drizzle of olive oil over a medium-high heat. • Cook capsicum and carrot until tender, 3-5 minutes. Add garlic paste and Southeast Asian spice blend (see ingredients) and cook, stirring, until fragrant, 1-2 minutes. • Add the water, coconut milk and vegetable stock powder. Bring to a boil, then reduce heat to medium. Simmer until slightly thickened, 3-5 minutes.\n• Add the flat noodles and cook, until tender, 3-4 minutes. In the last minute of cook time, gently stir the noodles with a fork to separate. • Stir in Asian greens, soy sauce and brown sugar, until combined and heated through. • Remove from heat. Squeeze in some lemon juice to taste.\nTIP: Add a splash of water if the laksa looks too thick.\n• Divide Malaysian veggie laksa between bowls. • Tear over coriander and sprinkle with crushed peanuts. • Serve with any remaining lemon wedges.",
+	"classification": 4,
+    "cook_time": "15",
+    "is_publish": true,
+    "num_of_servings": 2,
+    "nutrition": {"Energy (kJ)":"2238 kJ",
+	"Fat": "26.9 g",
+	"of which saturates": "14.3 g",
+	"Carbohydrate": "59.1 g",
+	"of which sugars": "16.1 g",
+	"Protein": "15.3 g",
+	"Sodium": "1925 mg"},
+    "recipe_name": "Malaysian Veggie Laksa <sub>with Flat Noodles & Roasted Peanuts</sub>"
+}

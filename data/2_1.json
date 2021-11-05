@@ -1,0 +1,22 @@
+#type -->         
+
+{ "is_publish": true, "name": "Veggis" }
+
+
+#recipe -->         
+{
+    "description": "With pre-chopped, pre-marinated ingredients, our new Fresh & Fast recipes are on the table in just 15 minutes. Perfect for busy weeknights - and busy people. This week, we are stepping up the mid-week pasta night with a roast pumpkin ravioli with a creamy bacon and mushroom sauce to bring it all together.",
+    "directions": "• Boil the kettle • Heat olive oil in a frying pan over high heat • Cook diced bacon, breaking up with a spoon, until browned, 3 mins • Add mushrooms and garlic paste and cook until softened, 5 mins • Add spinach and tear in sage leaves. Stir until just wilted.\n• Pour boiling water into a saucepan over high heat • Bring to boil, add ravioli and cook until ‘al dente’, 3 mins • Using a slotted spoon, transfer ravioli to the frying pan and toss to combine.\n• Add cream and 1/2 the Parmesan to the pan and stir to combine • Season to taste • Serve ravioli topped with remaining Parmesan.",
+	"classification": 2,
+    "cook_time": "15",
+    "is_publish": true,
+    "num_of_servings": 4,
+    "nutrition": {"Energy (kJ)":"3131 kJ",
+	"Fat": "40.9 g",
+	"of which saturates": "21.3 g",
+	"Carbohydrate": "64.1 g",
+	"of which sugars": "16.1 g",
+	"Protein": "29.3 g",
+	"Sodium": "1406 mg"},
+    "recipe_name": "Creamy Pumpkin Ravioli & Bacon with Mushrooms & Sage <sub>Pre-Prepped | Three Steps | Ready in 15</sub>"
+}
