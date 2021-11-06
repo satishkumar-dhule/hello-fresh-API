@@ -54,14 +54,22 @@ def create_app(config_name):
     @app.route('/api/v1/register', methods=['GET', 'POST'])
     def signup_user():
         data = request.get_json()
-        hashed_password = generate_password_hash(data['password'], method='sha256')
-        try:
-            row = models.Users.create(public_id=uuid.uuid4(), name=data["name"], password=hashed_password, admin=False)
-            app.logger.info(f"{row} created successfully")
-            return jsonify({'message': f'{row.name} registered successfully'})
-        except Exception as e:
-            app.logger.error(f"{e}")
-            return not_found(e, 403)
+        app.logger.info('name' in data)
+        app.logger.info('password' in data)
+        app.logger.info(data)
+
+        
+        if 'name' in data and 'password' in data:
+            try:
+                hashed_password = generate_password_hash(data['password'], method='sha256')
+                row = models.Users.create(public_id=uuid.uuid4(), name=data["name"], password=hashed_password, admin=False)
+                app.logger.info(f"{row} created successfully")
+                return jsonify({'message': f'{row.name} registered successfully'})
+            except Exception as e:
+                app.logger.error(f"{e}")
+                return not_found(e, 403)
+        else:
+            return jsonify({'error': f'missing name and/or password in input.'}),422 
     
     
     @app.route('/api/v1/login', methods=['GET', 'POST'])
@@ -86,7 +94,7 @@ def create_app(config_name):
             app.logger.info(f"token generated for user : {user}")
             return jsonify({'token': token})
         app.logger.warning(f"could not verify : {user}")
-        return make_response('could not verify, check for valid credentials', 401, {'WWW.Authentication': 'Basic realm: "login required"'})
+        return make_response({'error':'could not verify, check for valid credentials'}, 401, {'WWW.Authentication': 'Basic realm: "login required"'})
     
     
     @app.route('/api/v1/user', methods=['GET'])
