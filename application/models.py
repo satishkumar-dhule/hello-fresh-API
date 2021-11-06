@@ -38,12 +38,19 @@ class RecipeClassification(BaseModel):
     is_publish = BooleanField(default=False)
 
     @property
+    def has_links(self):
+        if Recipe.select().where(Recipe.classification==self).count():
+            return True
+        else:
+            return False
+
+    @property
     def serialize(self):
         data = {
             'id': self.id,
             'name': self.name,
-            'is_publish': self.is_publish
-
+            'is_publish': self.is_publish,
+            'has_links': self.has_links
         }
         return data
 
@@ -54,7 +61,7 @@ class RecipeClassification(BaseModel):
 class Recipe(BaseModel):
     """Recipe Model"""
     delete_recursive = True
-    recipe_name = CharField(default='')
+    recipe_name = CharField(default='', unique=True)
     description = TextField(default='')
     num_of_servings = SmallIntegerField(default=2)
     cook_time = SmallIntegerField(default=30)
@@ -67,9 +74,17 @@ class Recipe(BaseModel):
     def ingredients(self):
         return [i.serialize for i in Ingredient.select().where(Ingredient.recipe == self)]
 
+
+    @property
+    def has_links(self):
+       if WeeklyRecipeMap.select().where(WeeklyRecipeMap.recipe == self).count():
+           return True
+       else:
+           return False
+
     @property
     def serialize(self):
-        data = {'ingredients': self.ingredients}
+        data = {'ingredients': self.ingredients, 'has_links':self.has_links}
         data.update(model_to_dict(self))
         return data
 
@@ -217,6 +232,14 @@ class RecipeReview(BaseModel):
     summary = CharField()
     pub_date = DateTimeField(default=datetime.now)
 
+    class Meta:
+         indexes = (
+              (('recipe', 'customer'), True),
+        )
+            
+
+
+
     @property
     def serialize(self):
         data = {
@@ -249,6 +272,11 @@ class WeeklyMenuReview(BaseModel):
         default=5)
     summary = CharField()
     pub_date = DateTimeField(default=datetime.now)
+
+    class Meta:
+        indexes = (
+             (('menu', 'customer'), True),
+       )
 
     @property
     def serialize(self):

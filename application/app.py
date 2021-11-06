@@ -1,3 +1,4 @@
+import re
 import uuid
 from datetime import datetime, timedelta
 from functools import wraps
@@ -178,6 +179,9 @@ def create_app(config_name):
             except Exception as e:
                 app.logger.warning(f"recipe:{recipe}, {e}")
                 return not_found(e, 404)
+
+            if recipe.has_links:
+                return make_response({"error": "Rejected due to foreign key constraints"},400)
     
             if recipe and recipe.is_publish:
                 recipe.is_publish = False
@@ -262,6 +266,9 @@ def create_app(config_name):
                 )
             except Exception as e:
                 return not_found(e, 404)
+
+            if recipeClassification.has_links:
+                return make_response({"error":"Rejected due to foreign key constraints"},400)
     
             if recipeClassification:
                 recipeClassification.is_publish = False
@@ -283,8 +290,8 @@ def create_app(config_name):
             except Exception as e:
                 return not_found(e, 400)
             if not request.json:
-                abort(400)
-            # print(request.json.items())
+                return make_response ({"error": "Payload is null or invalid"},400)
+            app.logger.info(request.json.items())
             try:
                 for k, v in request.json.items():
                     if k in c.__dict__['__data__']:
