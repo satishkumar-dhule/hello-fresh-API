@@ -6,3 +6,5 @@ MANIFEST
 *__pycache__/
 .pytest*/
 *venv*
+*.log
+*.err*
