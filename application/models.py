@@ -1,3 +1,4 @@
+from enum import unique
 import statistics
 from datetime import datetime
 from peewee import *
@@ -33,7 +34,7 @@ class BaseModel(Model):
 
 class RecipeClassification(BaseModel):
     """RecipeClassification Model"""
-    name = CharField(max_length=35)
+    name = CharField(max_length=35,unique=True)
     is_publish = BooleanField(default=False)
 
     @property
