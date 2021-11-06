@@ -55,6 +55,6 @@ Unit testing
     ![Screenshot](docs/test.png)
 
 
-- API documentation is published on postman https://documenter.getpostman.com/view/7952247/UVC2HoyV
+- API documentation is published on postman https://documenter.getpostman.com/view/UVC3jTGL?version=latest
 
     ![Screenshot](docs/api-test.png)
