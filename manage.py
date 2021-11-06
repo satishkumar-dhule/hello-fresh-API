@@ -130,6 +130,7 @@ def create_initial_db():
 
     try:
         run_sql([f"CREATE DATABASE {os.getenv('APPLICATION_DB')}"])
+        run_sql([f"create extension hstore"])
     except psycopg2.errors.DuplicateDatabase:
         print(
             f"The database {os.getenv('APPLICATION_DB')} already exists and will not be recreated"
